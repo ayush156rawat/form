@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+  <header>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to fill this form!</p>
+  </header>
+<form id="survey-form">
+<label id="name-label" class="input-label" for="name">Name:</label>
+<input id="name" type="text" value="name" placeholder="Name" required>
+
+<label id="email-label" class="input-label" for="email">Email:</label>
+<input id="email" type="email" placeholder="xyz@gmail.com" required>
+
+<label id="number-label" class="input-label" for="age">Your Age:</label>
+<input id="number" placeholder="Age(in years)" type="number" min="10" max="88" required>
+
+<label id="input-label" for="dropdown">Please Select Your Course: </label>
+    <select id="dropdown">
+      <option>BCA</option>
+      <option>B.Tech</option>
+      <option>BJMC</option>
+      <option>BBA</option>
+      <option>BALLB</option>
+    </select>
+<hr/>
+    <p>Which Course You Want to Choose:</p>
+    <label class="review">
+    <input type="radio" id="review-input" name="one" value="one">1. Web Development</label>
+    <label class="review">
+    <input type="radio" id="review-input" name="one" value="two">2. App Development</label>
+    <label class="review">
+    <input type="radio" id="review-input" name="one" value="three">3. Game Development</label>
+    <label class="review">
+    <input type="radio" id="review-input" name="one" value="four">4. Data Analysis</label>
+    <label class="review">
+    <input type="radio" id="review-input" name="one" value="five">5. Machine Learning</label>
+<hr/>
+<div class="review">
+<p>PLEASE GIVE US FEEDBACKS AND REVIEWS....</p>
+<label class="review">
+<input type="checkbox" id="review-input" value="one">yes</label>
+<label class="review">
+<input type="checkbox" id="review-input" value="two">no</label>
+</div>
+<hr/>
+<label for="txt"> FEEDBACK:</label>
+<textarea id="txt" rows="4" cols="10">Your Reviews....</textarea>
+<input type="submit" id="submit" value="Submit"> 
+</form> 
+</body>
+</html>
