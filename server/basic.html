@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="PGcontainer">
+        <div class="formtitle">
+          <h1>Create New Employee</h1>
+        </div>
+        <!-- <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()"> -->
+        <form action="#">
+          <div class="divform">
+      
+            <!-- <div class="form-row"> -->
+              <div class="form_name">
+                <label for="firstName" class="input_j">First Name</label>
+                <input type="text" placeholder="  Your Name..." required>
+              </div>
+              <div class="form_name">
+                <label for="middleName" class="input_j">Middle Name</label>
+                <input type="text" placeholder="  Your Middle Name..." >
+              </div>
+              <div class="form_name">
+                <label for="lastName" class="input_j">Last Name</label>
+                <input type="text" placeholder="  Your Last Name..." required>
+              </div>
+            <!-- </div> -->
+
+            <div class="form-group">
+                <label for="empCode" class="input_i">Employee Code</label>
+                <input type="text" placeholder="   Employee Id..." required>
+              </div>
+
+            <div class="form-group">
+              <label for="orgUnit" class="input_i">Organization Unit</label>
+              <input type="text" placeholder="   Organization Unit" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="doj" class="input_i">Date of Joining</label>
+              <input type="date" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="refNumber" class="input_i">Reference Number</label>
+              <input type="text" placeholder="   Ref No...." required>
+            </div>
+      
+            <div class="form-group">
+              <label for="extraField" class="input_i">Extra Field</label>
+              <input type="text" placeholder="   Extra Feild..." required>
+            </div>
+      
+            <div class="form-drop">
+              <label for="extraDDL" class="input_k">Extra Dropdown</label>
+              <select class="type">
+                <option *ngFor="let option of extraOptions" [value]="option">{{option}}</option>
+                <option *ngFor="let option of extraOptions" [value]="option">{{option}}</option>
+                <option *ngFor="let option of extraOptions" [value]="option">{{option}}</option>
+              </select>
+            </div>
+
+            <div class="form-drop">
+                <label for="empType" class="input_k">Employee Type</label>
+                <select class="type">
+                  <option *ngFor="let type of empTypes" [value]="type">{{type1}}</option>
+                  <option *ngFor="let type of empTypes" [value]="type">{{type2}}</option>
+                  <option *ngFor="let type of empTypes" [value]="type">{{type3}}</option>
+                </select>
+            </div>
+            <button type="submit" class="btn"><p>Create</p></button>
+          </form>
+        </div>
+      
+      </div>
+</body>
+</html>

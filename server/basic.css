@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    display: flex;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+}
+/* inner container of body */
+.PGcontainer {
+    background-color: rgb(244, 236, 236);
+    padding:40px 50px 40px 50px;/* margin or padding:top right left bottom;  */
+    border-radius: 10px;
+}
+
+/* it introduce the line under the title */
+.PGcontainer .formtitle {
+    text-align: left;
+    margin: 30px;
+    font-weight: 600; 
+    position: relative;
+}
+.PGcontainer .formtitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: black;
+}
+
+.PGcontainer form .divform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+/*form-group class repersent emp-code etc*/
+form .divform .form-group{
+    width: calc(100% / 2 - 70px);
+    margin-bottom: 15px;
+}
+/*above text of input box*/
+form .divform .form-group .input_i {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+/*input name is for input box where we type */
+form .divform .form-group input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;/*to increse or decrease the roundedness of the corners of the input box*/
+    border: 1px solid #ccc;
+    padding-left:0px 40px 0 40px;
+    font-size:16px ;
+}
+
+/* form_name class repersent first name, middle neame,last name etc */
+form .divform .form_name {
+    width: calc(100% / 3 - 20px);/*divide same class into 3 coloumn - 20 px each*/
+    margin-bottom: 15px;
+}
+/*above text of input box*/
+form .divform .form_name .input_j {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+/*input name is for input box where we type */
+form .divform .form_name input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 3.5px;
+    border: 1px solid #ccc;
+    padding-left:0px 5px 0px 5px;
+    font-size:16px ;
+}
+
+/* form-drop class repersent extra dropdown, employee type  */
+form .divform .form-drop {
+    width: calc(100% / 1 - 0px);
+    margin-bottom: 15px;
+}
+/*above text of input box*/
+form .divform .form-drop .input_k {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+/*select name is for selection bar where we type */
+form .divform .form-drop select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 3.5px;
+    border: 1px solid #ccc;
+    padding-left:0px 5px 0px 5px;
+    font-size:16px ;
+}
+
+/*this .type is used for employee type and extra dropdown*/
+form .divform .form-group .type {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 3.5px;
+    border: 1px solid #ccc;
+    padding-left:15px;
+    font-size:16px ;
+}
+/*button*/
+.btn {
+    padding: 6px 14px 6px 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 187, 222);
+
+}
+.btn p {
+    font-size: 14px;
+    font-weight: 500;
+}
